@@ -1,0 +1,20 @@
+<div class="container content collection">
+
+  <div class="page-header">
+    <h1>Коллекция</h1>
+  </div>
+
+  <ul class="media-list">
+    <li class="media item" ng-repeat="item in collection">
+      <a class="pull-left" href="javascript:;">
+        <img class="media-object" src="{{item.image}}" alt="News image">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading">{{item.title}}</h4>
+        <p>{{item.content}}</p>
+      </div>
+      <button type="button" class="btn btn-primary" ng-click="addItem($index)">В корзину</button>
+    </li>
+  </ul>
+
+</div>

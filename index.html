@@ -1,0 +1,45 @@
+<html ng-app="PerfumeApp">
+<head>
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/angular.js"></script>
+  <script src="js/angular-route.js"></script>
+  <script src="js/app.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-default" role="navigation" ng-controller="HeaderCtrl">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">PERFUME*</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Главная</a></li>
+          <li><a href="#/collection">Коллекция</a></li>
+          <li><a href="#/about">О компании</a></li>
+          <li><a href="#/cart"><span class="badge pull-right">{{cart.items.length}}</span>Корзина</a></li>
+          <li><a href="#/contacts">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="main" ng-view></div>
+
+  <div class="footer">
+    <div class="copyright">© Перфьюм 2014. Все права защищены.</div>
+  </div>
+
+</body>
+</html>

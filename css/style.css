@@ -1,0 +1,59 @@
+.navbar {
+  border-radius: 0;
+}
+
+body {
+  background-image: url('../images/bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main {
+  min-height: 100%;
+}
+
+.promo {
+  float: right;
+  text-align: right;
+  color: #fff;
+  font-size: 60px;
+  margin-top: 200px;
+}
+
+.news-wrapper {
+  background: #fff;
+  margin-top: 300px;
+  padding-bottom: 50px;
+}
+
+.content {
+  background-color: #fff;
+  padding-bottom: 50px;
+}
+
+.item img {
+  width: 300px;
+}
+
+.about p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.contacts-info {
+  text-align: right;
+}
+
+.contact-form {
+  text-align: left;
+}
+
+.footer {
+padding-top: 40px;
+padding-bottom: 40px;
+background-color: #fff;
+margin-top: 50px;
+color: #777;
+text-align: center;
+border-top: 1px solid #e5e5e5;
+}
